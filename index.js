@@ -5,17 +5,15 @@ let pessoas = [
     {nome: 'Pedro', idade: 41, aprovado: true, categoria: 'A'},
 ]
 
-let lista = ""
-
 function exibirAprovados(lista, categoria) {
-    for (let i = 0; i < pessoas.length; i++) {
-        if (pessoas[i].aprovado == true && pessoas[i].idade >= 18 && pessoas[i].categoria == categoria) {
-            lista = pessoas[i].nome
-            console.log(lista + " foi aprovado na categoria " + categoria )
+    for (let i = 0; i < lista.length; i++) {
+        if (lista[i].aprovado && lista[i].idade >= 18 && lista[i].categoria == categoria) {
+            let nomeDoAprovado = lista[i].nome
+            console.log(nomeDoAprovado + " foi aprovado na categoria " + categoria )
         }
     }
 }
 
-exibirAprovados(lista, 'A')
-exibirAprovados(lista, 'B')
+exibirAprovados(pessoas, 'A')
+exibirAprovados(pessoas, 'B')
 
