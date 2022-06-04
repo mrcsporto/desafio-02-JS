@@ -1,6 +1,6 @@
 let pessoas = [
     {nome: 'Carlos', idade: 31, aprovado: true, categoria: 'A'},
-    {nome: 'João', idade: 18, aprovado: true, categoria: 'B'},
+    {nome: 'João', idade: 11, aprovado: true, categoria: 'B'},
     {nome: 'Joaquim', idade: 21, aprovado: false, categoria: 'A'},
     {nome: 'Pedro', idade: 41, aprovado: true, categoria: 'A'},
 ]
